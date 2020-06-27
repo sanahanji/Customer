@@ -29,11 +29,8 @@
     background-position: center;
     background-attachment: fixed;       
     -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-    height:100%;
-    width:100%;">
+    height:100%;">
 
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
@@ -48,11 +45,11 @@
       </div>
 
       <nav class="nav-menu">
-        <ul>
-          <li><a href="#profile"><i class="bx bx-user"></i> <span>Profile</span></a></li>          
+        <ul>        
           <li><a href="#post"><i class="bx bx-server"></i>Post/Get</a></li>
           <li><a href="#offer"><i class="bx bx-server"></i>Offers/Discounts</a></li>
-          <li><a href="#order"><i class="bx bx-server"></i>Cart</a></li>
+          <li><a href="#farmer"><i class="bx bx-server"></i>Top Farmers</a></li>
+          <li><a href="#crop"><i class="bx bx-server"></i>Top crops</a></li>
         </ul>
       </nav><!-- .nav-menu -->
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
@@ -62,38 +59,6 @@
 
   <main >
 
-    <!-- ======= Profile Section ======= -->
-    <section id="profile" class="about">
-      	<div class="container">
-        	<div class="row">
-          		<div class="col-lg-6 pt-lg-0 content" data-aos="fade-left">
-          			<div class="section-title">
-          				<h2>Profile :</h2>
-        			</div>
-					<ul>
-                		<li><i class="icofont-rounded-right"></i>
-                		<label><strong>NAME :</strong></label><input type="text" name="name" class="profile" value="ABC">
-                		<li><i class="icofont-rounded-right"></i>
-                		<label><strong>ADDRESS :</strong><label><input type="text" name="add" class="profile" value="23rd, ABD, ll-9">
-                		<li><i class="icofont-rounded-right"></i>
-                		<label><strong>Phone :</strong></label><input type="text" name="phn" class="profile" value="+123 456 7890">
-                		<li><i class="icofont-rounded-right"></i>
-                		<label><strong>No. Crops Produced :</strong><label><input type="nocrp" name="add" class="profile" value="5">
-                	</ul>
-            	</div>
-	            <div class="col-lg-6 col-12" data-aos="fade-right">
-                <h3>Select Your Crop : </h3>
-                <th><select name="cropname" id="cropname">
-                  <option>Rice</option>
-                  <option>Barley</option>
-                  <option>Cotton</option>
-                </select>
-                </th><br><br>
-              <img src="assets/img/grp.jpg" style="width: 250px;height: 250px">
-            </div>
-      		</label>
-        </div>
-    </section><!-- End Profile Section -->
 
     <!-- ======= post Section ======= -->
     <section id="post" class="services">
@@ -127,23 +92,6 @@
       </div>
     </section><!-- End post Section -->
 
-    <!-- ======= Growth Section ======= -->
-    <section id="growth" class="growth">
-      <div class="container">
-        <div class="section-title">
-          <h2>Farm Growth Report (Graph) : </h2>
-      </div>
-      <div class="row"> 
-      	<div class="col content" data-aos="fade-left">
-			<p class="font-italic">
-              	<h4>Crop name & Rating</h4>
-			</p>
-            <i class="icofont-rounded-right"></i> <strong>Rice : </strong><span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span><br>
-            <i class="icofont-rounded-right"></i> <strong>Barley : </strong><span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star"></span><br>
-            <i class="icofont-rounded-right"></i> <strong>wheat : </strong><span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span>
-        </div>
-      </div>
-    </section><!-- End Growth Section -->
 
     <!-- ======= Offer Section ======= -->
     <section id="offer" class="portfolio section">
@@ -272,91 +220,262 @@
       </div>
     </section><!-- End Offer Section -->
 
-    <!-- ======= Order Section ======= -->
-    <section id="order" class="testimonials section">
-      <div class="container">
-        <div class="section-title" style="color: white">
-          <h2>Oders Placed</h2>
-          <table>
-            <tr>
-              <th>Date</th>
-              <th>Item name</th>
-              <th>Quantity</th>
-              <th>Farmer name</th>
-              <th>Price</th>
-              <th>Status</th>
-            </tr>
-            <tr>
-              <th>2/11/19</th>
-              <th>Rice</th>
-              <th>26kg</th>
-              <th>ABC</th>
-              <th>Rs.565</th>
-              <th>Packing</th>
-            </tr>
-            <tr>
-              <th>12/9/19</th>
-              <th>barley</th>
-              <th>22kg</th>
-              <th>AdwwsaC</th>
-              <th>Rs.340</th>
-              <th>Dispatched</th>
-            </tr>
-            <tr>
-              <th>16/7/19</th>
-              <th>Cotton</th>
-              <th>15kg</th>
-              <th>Ksued</th>
-              <th>Rs.250</th>
-              <th>Delivered</th>
-            </tr>
-          </table>
+    <!-- ======= farmer score Section ======= -->
+     <section id="farmer" class="section">
+       <div class="container">
+          <div class="section-title">
+          <h2>Farmer Scores</h2>
         </div>
-      </div>
-    </section><!-- End Order Section -->
+        <div class="container1">
+          <div class="card">
+            <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
+            <p class="card__name">Lily-Grace Colley</p>
+            <div class="grid-container">
+              <div class="grid-child-posts">
+                Rice
+              </div>
+              <div class="grid-child-followers">
+                4.5/5
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
+            <p class="card__name">Lily-Grace Colley</p>
+            <div class="grid-container">
+              <div class="grid-child-posts">
+                Rice
+              </div>
+              <div class="grid-child-followers">
+                4.5/5
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
+            <p class="card__name">Lily-Grace Colley</p>
+            <div class="grid-container">
+              <div class="grid-child-posts">
+                Rice
+              </div>
+              <div class="grid-child-followers">
+                4.5/5
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container1">
+          <div class="card">
+            <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
+            <p class="card__name">Lily-Grace Colley</p>
+            <div class="grid-container">
+              <div class="grid-child-posts">
+                Rice
+              </div>
+              <div class="grid-child-followers">
+                4.5/5
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
+            <p class="card__name">Lily-Grace Colley</p>
+            <div class="grid-container">
+              <div class="grid-child-posts">
+                Rice
+              </div>
+              <div class="grid-child-followers">
+                4.5/5
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
+            <p class="card__name">Lily-Grace Colley</p>
+            <div class="grid-container">
+              <div class="grid-child-posts">
+                Rice
+              </div>
+              <div class="grid-child-followers">
+                4.5/5
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+     </section>
+    <!-- End farmer Section -->
 
-    <!-- ======= Buyer Section ======= -->
-    <section id="buyer" class="contact">
-      <div class="container">
-        <div class="section-title" style="color: white">
-          <h2>Buyer's List</h2>
-          <table>
-            <tr>
-              <th>Date</th>
-              <th>Item name</th>
-              <th>Quantity</th>
-              <th>Rating</th>
-              <th>Price</th>
-              <th>Status</th>
-            </tr>
-            <tr>
-              <th>2/11/19</th>
-              <th>Rice</th>
-              <th>26kg</th>
-              <th><span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star"></span></th>
-              <th>Rs.565</th>
-              <th>Packing</th>
-            </tr>
-            <tr>
-              <th>12/9/19</th>
-              <th>barley</th>
-              <th>22kg</th>
-              <th><span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></th>
-              <th>Rs.340</th>
-              <th>Dispatched</th>
-            </tr>
-            <tr>
-              <th>16/7/19</th>
-              <th>Cotton</th>
-              <th>15kg</th>
-              <th><span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star"></span></th>
-              <th>Rs.250</th>
-              <th>Delivered</th>
-            </tr>
-          </table>
+    <!-- ======= Crop score Section ======= -->
+     <section id="crop" class="section">
+       <div class="container">
+          <div class="section-title">
+          <h2>Crop Scores</h2>
+          </div>
+          <div class="row">
+          <div class="col-lg-3">
+            <div class="property-card">
+              <div class="property-image" style="background-image: url(assets/img/portfolio/portfolio-1.jpg);">
+                <div class="property-image-title">
+                </div>
+              </div>
+              <div class="property-description">
+                <table class="tablescrp">
+                  <tr>
+                    <th>Farmer name: </th>
+                    <th>ABC</th>
+                  </tr>
+                  <tr>
+                    <th>Crop Score :</th>
+                    <th>4.2/5</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="property-card">
+              <div class="property-image" style="background-image: url(assets/img/portfolio/portfolio-1.jpg);">
+                <div class="property-image-title">
+                </div>
+              </div>
+              <div class="property-description">
+                <table class="tablescrp">
+                  <tr>
+                    <th>Farmer name: </th>
+                    <th>ABC</th>
+                  </tr>
+                  <tr>
+                    <th>Crop Score :</th>
+                    <th>4.2/5</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="property-card">
+              <div class="property-image" style="background-image: url(assets/img/portfolio/portfolio-1.jpg);">
+                <div class="property-image-title">
+                </div>
+              </div>
+              <div class="property-description">
+                <table class="tablescrp">
+                  <tr>
+                    <th>Farmer name: </th>
+                    <th>ABC</th>
+                  </tr>
+                  <tr>
+                    <th>Crop Score :</th>
+                    <th>4.2/5</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="property-card">
+              <div class="property-image" style="background-image: url(assets/img/portfolio/portfolio-1.jpg);">
+                <div class="property-image-title">
+                </div>
+              </div>
+              <div class="property-description">
+                <table class="tablescrp">
+                  <tr>
+                    <th>Farmer name: </th>
+                    <th>ABC</th>
+                  </tr>
+                  <tr>
+                    <th>Crop Score :</th>
+                    <th>4.2/5</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="property-card">
+              <div class="property-image" style="background-image: url(assets/img/portfolio/portfolio-1.jpg);">
+                <div class="property-image-title">
+                </div>
+              </div>
+              <div class="property-description">
+                <table class="tablescrp">
+                  <tr>
+                    <th>Farmer name: </th>
+                    <th>ABC</th>
+                  </tr>
+                  <tr>
+                    <th>Crop Score :</th>
+                    <th>4.2/5</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="property-card">
+              <div class="property-image" style="background-image: url(assets/img/portfolio/portfolio-1.jpg);">
+                <div class="property-image-title">
+                </div>
+              </div>
+              <div class="property-description">
+                <table class="tablescrp">
+                  <tr>
+                    <th>Farmer name: </th>
+                    <th>ABC</th>
+                  </tr>
+                  <tr>
+                    <th>Crop Score :</th>
+                    <th>4.2/5</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="property-card">
+              <div class="property-image" style="background-image: url(assets/img/portfolio/portfolio-1.jpg);">
+                <div class="property-image-title">
+                </div>
+              </div>
+              <div class="property-description">
+                <table class="tablescrp">
+                  <tr>
+                    <th>Farmer name: </th>
+                    <th>ABC</th>
+                  </tr>
+                  <tr>
+                    <th>Crop Score :</th>
+                    <th>4.2/5</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="property-card">
+              <div class="property-image" style="background-image: url(assets/img/portfolio/portfolio-1.jpg);">
+                <div class="property-image-title">
+                </div>
+              </div>
+              <div class="property-description">
+                <table class="tablescrp">
+                  <tr>
+                    <th>Farmer name: </th>
+                    <th>ABC</th>
+                  </tr>
+                  <tr>
+                    <th>Crop Score :</th>
+                    <th>4.2/5</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section><!-- End buyer Section -->
+     </section>
+    <!-- End farmer Section -->    
 
   </main><!-- End #main -->
 
